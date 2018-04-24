@@ -1,6 +1,5 @@
 package ejercicio27;
 
-import static ejercicio27.Calculadora.cad;
 
 /**
  *
@@ -9,8 +8,8 @@ import static ejercicio27.Calculadora.cad;
 public class Metodos {
     public static String arrayString(){
         String num="";
-        for(int i=0; i<cad.size(); i++){
-            num=num+cad.get(i);
+        for(int i=0; i<Calculadora.cad.size(); i++){
+            num=num+Calculadora.cad.get(i);
         }
         return num;
     }
