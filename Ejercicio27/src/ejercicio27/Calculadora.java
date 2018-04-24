@@ -393,6 +393,7 @@ public class Calculadora extends javax.swing.JFrame{
         }
         pantalla.setText(Metodos.arrayString());
         this.habilitarBotones();
+        sum=res=mult=div=false;
     }//GEN-LAST:event_bIgualActionPerformed
 
     private void b0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b0ActionPerformed
