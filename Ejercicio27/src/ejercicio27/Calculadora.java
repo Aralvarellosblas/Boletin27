@@ -463,8 +463,14 @@ public class Calculadora extends javax.swing.JFrame{
 
     private void bRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bRestaActionPerformed
         this.desabilitarBotones();
-        num1=Float.parseFloat(Metodos.arrayString());
-        cad.clear();
+        if(cad.isEmpty()){
+            cad.add("-");
+            pantalla.setText(Metodos.arrayString());
+            this.habilitarBotones();
+        }else{
+            num1=Float.parseFloat(Metodos.arrayString());
+            cad.clear();
+        }
         pantalla.setText("-");
         res=true;
         bDec.setEnabled(true);
