@@ -489,7 +489,12 @@ public class Calculadora extends javax.swing.JFrame{
     }//GEN-LAST:event_bDivActionPerformed
 
     private void bBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bBorrarActionPerformed
-        cad.remove(cad.size()-1);
+        if(cad.get(cad.size()-1)=="."){
+            bDec.setEnabled(true);
+            cad.remove(cad.size()-1);
+        }else{
+            cad.remove(cad.size()-1);
+        }
         pantalla.setText(Metodos.arrayString());
     }//GEN-LAST:event_bBorrarActionPerformed
 
